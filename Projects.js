@@ -48,7 +48,7 @@ export default function Projects() {
 
         <section class="project-item">
           <img src="images/spookyGlitterLogo.jpg" alt="Spooky Glitter Logo" />
-          <h3>Spooky Glitter</h3>
+          <h3>Silent Profit</h3>
           <p>
             Spooky Glitter is a store website where the users can see all the
             available a soon to come items. They are also able to buy directly

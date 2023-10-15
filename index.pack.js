@@ -619,7 +619,7 @@ function MainContent() {
   return _react2.default.createElement(
     "div",
     null,
-    "Hi"
+    "Hi, thanks for visiting my web portfolio."
   );
 }
 
@@ -647,23 +647,14 @@ function Navbar() {
     { className: "nav" },
     _react2.default.createElement("img", { src: "./react-logo.png", className: "nav-logo" }),
     _react2.default.createElement(
-      "ul",
-      { className: "nav-items" },
-      _react2.default.createElement(
-        "li",
-        null,
-        "Travel Blog"
-      ),
-      _react2.default.createElement(
-        "li",
-        null,
-        "About"
-      ),
-      _react2.default.createElement(
-        "li",
-        null,
-        "Contact"
-      )
+      "h2",
+      { className: "nav--logo_text" },
+      "About me"
+    ),
+    _react2.default.createElement(
+      "h3",
+      { className: "nav--title" },
+      "Travel Blog coming soon"
     )
   );
 }
@@ -767,7 +758,7 @@ function Projects() {
         _react2.default.createElement(
           "h3",
           null,
-          "Spooky Glitter"
+          "Silent Profit"
         ),
         _react2.default.createElement(
           "p",

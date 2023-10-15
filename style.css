@@ -12,11 +12,12 @@ body {
 nav {
   display: flex;
   align-items: center;
-  background-color: #212a23;
+  background-color: #2f8c43;
   height: 90px;
   padding: 30px 25px;
 }
 
+.nav--logo_text,
 .nav--title {
   margin: 0;
 }
