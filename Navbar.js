@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="nav">
       <img src="./react-logo.png" className="nav-logo" />
       <ul className="nav-items">
-        <li>Blog</li>
+        <li>Travel Blog</li>
         <li>About</li>
         <li>Contact</li>
       </ul>

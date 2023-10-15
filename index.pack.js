@@ -63,11 +63,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 13);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(17);
+} else {
+  module.exports = __webpack_require__(16);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -257,21 +272,6 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(13);
-} else {
-  module.exports = __webpack_require__(12);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -376,15 +376,155 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(17);
+  module.exports = __webpack_require__(21);
 } else {
-  module.exports = __webpack_require__(16);
+  module.exports = __webpack_require__(20);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Contact;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Contact() {
+  return _react2.default.createElement(
+    "div",
+    { "class": "content-wrap" },
+    _react2.default.createElement(
+      "h2",
+      null,
+      "Contact me:"
+    ),
+    _react2.default.createElement(
+      "ul",
+      { "class": "contact-list" },
+      _react2.default.createElement(
+        "li",
+        null,
+        _react2.default.createElement(
+          "a",
+          { href: "mailto:alberto.obando98@gmail.com" },
+          "alberto.obando98@gmail.com"
+        )
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        _react2.default.createElement(
+          "a",
+          { href: "https://albertoobando.com", target: "_blank" },
+          "albertoobando.com"
+        )
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        _react2.default.createElement(
+          "a",
+          {
+            href: "https://www.linkedin.com/in/alberto-obando-zuniga/",
+            target: "_blank"
+          },
+          "LinkedIn"
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Education;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Education() {
+  return _react2.default.createElement(
+    "section",
+    { "class": "education" },
+    _react2.default.createElement(
+      "div",
+      { "class": "content-wrap item-details" },
+      _react2.default.createElement(
+        "h2",
+        null,
+        "Education"
+      ),
+      _react2.default.createElement(
+        "section",
+        null,
+        _react2.default.createElement(
+          "h3",
+          null,
+          "LEAD U - San Jose, CR"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "Cloud Computing, 2023-to date"
+        )
+      ),
+      _react2.default.createElement(
+        "section",
+        null,
+        _react2.default.createElement(
+          "h3",
+          null,
+          "Tecnol\xF3gico de Costa Rica - Cartago, CR"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "Bachelor in Computer Science Engeeniring, 2016-21"
+        )
+      ),
+      _react2.default.createElement(
+        "section",
+        null,
+        _react2.default.createElement(
+          "h3",
+          null,
+          "Saint Paul High School - Alajuela, CR"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "Bachelor in Secondary Education, 2011-2015"
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -395,7 +535,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = Footer;
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -414,7 +554,7 @@ function Footer() {
 }
 
 /***/ }),
-/* 5 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -425,7 +565,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = Header;
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -458,7 +598,7 @@ function Header() {
 }
 
 /***/ }),
-/* 6 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -469,7 +609,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = MainContent;
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -484,7 +624,52 @@ function MainContent() {
 }
 
 /***/ }),
-/* 7 */
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Navbar;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Navbar() {
+  return _react2.default.createElement(
+    "nav",
+    { className: "nav" },
+    _react2.default.createElement("img", { src: "./react-logo.png", className: "nav-logo" }),
+    _react2.default.createElement(
+      "ul",
+      { className: "nav-items" },
+      _react2.default.createElement(
+        "li",
+        null,
+        "Travel Blog"
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        "About"
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        "Contact"
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -495,7 +680,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = Projects;
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -604,7 +789,196 @@ function Projects() {
 }
 
 /***/ }),
-/* 8 */
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Work;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Work() {
+  return _react2.default.createElement(
+    "section",
+    { "class": "work-experience" },
+    _react2.default.createElement(
+      "div",
+      { "class": "content-wrap item-details divider" },
+      _react2.default.createElement(
+        "h2",
+        null,
+        "Work Experience"
+      ),
+      _react2.default.createElement(
+        "p",
+        null,
+        "See my complete work experience on:",
+        _react2.default.createElement(
+          "a",
+          { href: "https://www.linkedin.com/in/alberto-obando-zuniga/" },
+          "LinkedIn"
+        ),
+        "."
+      ),
+      _react2.default.createElement(
+        "section",
+        { "class": "job-item" },
+        _react2.default.createElement(
+          "div",
+          { "class": "job-details" },
+          _react2.default.createElement(
+            "h3",
+            null,
+            "Software Engineer I"
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            "Tebra"
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            "July 2023- September 2023"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { "class": "job-summary" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "Main tasks:",
+            _react2.default.createElement(
+              "ul",
+              null,
+              _react2.default.createElement(
+                "li",
+                null,
+                "Implemented new features customers asked in both applications, web and desktop."
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                "Worked on support of the desktop and web application to improve customer experience."
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                "Turned Figma designs into working browser-based web pages or emails."
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                "Partnered with product owners and product designers to develop and refine technical requirements."
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                "Developed and implemented testing plans for all tickets assigned."
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                "Collaborate in a fast-paced agile team to design, scope and build a new software platform."
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                "Build end-to-end web-based component application, integrate with APIs in Java, and worked with SQL models while balancing speed, priority, and scope."
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                "Manual debugging and testing of scope."
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                "On-call availability one week each month on average, attended alerts to help fix the problems faced at the moment."
+              ),
+              _react2.default.createElement("br", null)
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "section",
+        { "class": "job-item" },
+        _react2.default.createElement(
+          "div",
+          { "class": "job-details" },
+          _react2.default.createElement(
+            "h3",
+            null,
+            "Intern"
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            "Kareo"
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            "February 2021 - July 2021"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { "class": "job-summary" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "Main tasks:",
+            _react2.default.createElement(
+              "ul",
+              null,
+              _react2.default.createElement(
+                "li",
+                null,
+                "Worked with the Back-End team in a project to improve a key workflow of the Billing process."
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                "Developed and implemented testing plans for the improved workflow."
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                "Collaborated with product owners and product designers to develop and refine technical requirements."
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                "Worked in a fast-paced agile team to design, scope and build a new software component."
+              ),
+              _react2.default.createElement(
+                "li",
+                null,
+                "Documentation of the new software component proposal."
+              ),
+              _react2.default.createElement("br", null)
+            )
+          )
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -642,57 +1016,57 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(11);
+  module.exports = __webpack_require__(15);
 } else {
-  module.exports = __webpack_require__(10);
+  module.exports = __webpack_require__(14);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 9 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(8);
+var _reactDom = __webpack_require__(12);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _Header = __webpack_require__(5);
+var _Header = __webpack_require__(7);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Footer = __webpack_require__(4);
+var _Footer = __webpack_require__(6);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _MainContent = __webpack_require__(6);
+var _MainContent = __webpack_require__(8);
 
 var _MainContent2 = _interopRequireDefault(_MainContent);
 
-var _Projects = __webpack_require__(7);
+var _Projects = __webpack_require__(10);
 
 var _Projects2 = _interopRequireDefault(_Projects);
 
-var _Work = __webpack_require__(21);
+var _Work = __webpack_require__(11);
 
 var _Work2 = _interopRequireDefault(_Work);
 
-var _Contact = __webpack_require__(19);
+var _Contact = __webpack_require__(4);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
-var _Education = __webpack_require__(20);
+var _Education = __webpack_require__(5);
 
 var _Education2 = _interopRequireDefault(_Education);
 
-var _Navbar = __webpack_require__(22);
+var _Navbar = __webpack_require__(9);
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
 
@@ -715,7 +1089,7 @@ function App() {
 _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById("root"));
 
 /***/ }),
-/* 10 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -734,10 +1108,10 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var React = __webpack_require__(1);
+var React = __webpack_require__(0);
 var _assign = __webpack_require__(2);
 var Scheduler = __webpack_require__(3);
-var tracing = __webpack_require__(18);
+var tracing = __webpack_require__(22);
 
 var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 
@@ -26982,10 +27356,10 @@ exports.version = ReactVersion;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 11 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27000,7 +27374,7 @@ exports.version = ReactVersion;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(1),m=__webpack_require__(2),r=__webpack_require__(3);function y(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(y(227));var ba=new Set,ca={};function da(a,b){ea(a,b);ea(a+"Capture",b)}
+var aa=__webpack_require__(0),m=__webpack_require__(2),r=__webpack_require__(3);function y(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(y(227));var ba=new Set,ca={};function da(a,b){ea(a,b);ea(a+"Capture",b)}
 function ea(a,b){ca[a]=b;for(a=0;a<b.length;a++)ba.add(b[a])}
 var fa=!("undefined"===typeof window||"undefined"===typeof window.document||"undefined"===typeof window.document.createElement),ha=/^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,ia=Object.prototype.hasOwnProperty,
 ja={},ka={};function la(a){if(ia.call(ka,a))return!0;if(ia.call(ja,a))return!1;if(ha.test(a))return ka[a]=!0;ja[a]=!0;return!1}function ma(a,b,c,d){if(null!==c&&0===c.type)return!1;switch(typeof b){case "function":case "symbol":return!0;case "boolean":if(d)return!1;if(null!==c)return!c.acceptsBooleans;a=a.toLowerCase().slice(0,5);return"data-"!==a&&"aria-"!==a;default:return!1}}
@@ -27289,7 +27663,7 @@ exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!rk(c))throw Er
 
 
 /***/ }),
-/* 12 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29627,10 +30001,10 @@ exports.version = ReactVersion;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 13 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29660,7 +30034,7 @@ exports.useLayoutEffect=function(a,b){return S().useLayoutEffect(a,b)};exports.u
 
 
 /***/ }),
-/* 14 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30012,10 +30386,10 @@ exports.unstable_wrap = unstable_wrap;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 15 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30031,7 +30405,7 @@ var b=0;exports.__interactionsRef=null;exports.__subscriberRef=null;exports.unst
 
 
 /***/ }),
-/* 16 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30682,10 +31056,10 @@ exports.unstable_wrapCallback = unstable_wrapCallback;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 17 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30712,339 +31086,19 @@ exports.unstable_wrapCallback=function(a){var b=P;return function(){var c=P;P=b;
 
 
 /***/ }),
-/* 18 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(15);
+  module.exports = __webpack_require__(19);
 } else {
-  module.exports = __webpack_require__(14);
+  module.exports = __webpack_require__(18);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Contact;
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Contact() {
-  return _react2.default.createElement(
-    "div",
-    { "class": "content-wrap" },
-    _react2.default.createElement(
-      "h2",
-      null,
-      "Contact me:"
-    ),
-    _react2.default.createElement(
-      "ul",
-      { "class": "contact-list" },
-      _react2.default.createElement(
-        "li",
-        null,
-        _react2.default.createElement(
-          "a",
-          { href: "mailto:alberto.obando98@gmail.com" },
-          "alberto.obando98@gmail.com"
-        )
-      ),
-      _react2.default.createElement(
-        "li",
-        null,
-        _react2.default.createElement(
-          "a",
-          { href: "https://albertoobando.com", target: "_blank" },
-          "albertoobando.com"
-        )
-      ),
-      _react2.default.createElement(
-        "li",
-        null,
-        _react2.default.createElement(
-          "a",
-          {
-            href: "https://www.linkedin.com/in/alberto-obando-zuniga/",
-            target: "_blank"
-          },
-          "LinkedIn"
-        )
-      )
-    )
-  );
-}
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Education;
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Education() {
-  return _react2.default.createElement(
-    "section",
-    { "class": "education" },
-    _react2.default.createElement(
-      "div",
-      { "class": "content-wrap item-details" },
-      _react2.default.createElement(
-        "h2",
-        null,
-        "Education"
-      ),
-      _react2.default.createElement(
-        "section",
-        null,
-        _react2.default.createElement(
-          "h3",
-          null,
-          "Tecnol\xF3gico de Costa Rica - Cartago, CR"
-        ),
-        _react2.default.createElement(
-          "p",
-          null,
-          "Bachelor in Computer Science Engeeniring, 2016-to date"
-        )
-      ),
-      _react2.default.createElement(
-        "section",
-        null,
-        _react2.default.createElement(
-          "h3",
-          null,
-          "ULACIT - San Jose, CR"
-        ),
-        _react2.default.createElement(
-          "p",
-          null,
-          "Accounting assistance technician, 2020-to date"
-        )
-      ),
-      _react2.default.createElement(
-        "section",
-        null,
-        _react2.default.createElement(
-          "h3",
-          null,
-          "Saint Paul High School - Alajuela, CR"
-        ),
-        _react2.default.createElement(
-          "p",
-          null,
-          "Bachelor in Secondary Education, 2011-2015"
-        )
-      )
-    )
-  );
-}
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Work;
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Work() {
-  return _react2.default.createElement(
-    "section",
-    { "class": "work-experience" },
-    _react2.default.createElement(
-      "div",
-      { "class": "content-wrap item-details divider" },
-      _react2.default.createElement(
-        "h2",
-        null,
-        "Work Experience"
-      ),
-      _react2.default.createElement(
-        "p",
-        null,
-        "See my complete work experience on:",
-        _react2.default.createElement(
-          "a",
-          { href: "https://www.linkedin.com/in/alberto-obando-zuniga/"
-          },
-          "LinkedIn"
-        ),
-        "."
-      ),
-      _react2.default.createElement(
-        "section",
-        { "class": "job-item" },
-        _react2.default.createElement(
-          "div",
-          { "class": "job-details" },
-          _react2.default.createElement(
-            "h3",
-            null,
-            "Project Management and QA"
-          ),
-          _react2.default.createElement(
-            "p",
-            null,
-            "Tecnol\xF3gico de Costa Rica"
-          ),
-          _react2.default.createElement(
-            "p",
-            null,
-            "February 2019-Present"
-          )
-        ),
-        _react2.default.createElement(
-          "div",
-          { "class": "job-summary" },
-          _react2.default.createElement(
-            "p",
-            null,
-            "Managed diferent types of projects so QA was always maintained and the best result was achieved",
-            _react2.default.createElement(
-              "a",
-              { href: "https://albertoobando.com" },
-              "albertoobando.com"
-            ),
-            "."
-          )
-        )
-      ),
-      _react2.default.createElement(
-        "section",
-        { "class": "job-item" },
-        _react2.default.createElement(
-          "div",
-          { "class": "job-details" },
-          _react2.default.createElement(
-            "h3",
-            null,
-            "Assistant for Algorithm Analysis and Sound Synthesis"
-          ),
-          _react2.default.createElement(
-            "p",
-            null,
-            "Tecnol\xF3gico de Costa Rica"
-          ),
-          _react2.default.createElement(
-            "p",
-            null,
-            "February 2018 - July 2018"
-          )
-        ),
-        _react2.default.createElement(
-          "div",
-          { "class": "job-summary" },
-          _react2.default.createElement(
-            "p",
-            null,
-            "Assisted profesor Rodrigo Nu\xF1ez Nu\xF1ez while he was teaching classes."
-          ),
-          _react2.default.createElement(
-            "p",
-            null,
-            "Key contributions:"
-          ),
-          _react2.default.createElement(
-            "ul",
-            null,
-            _react2.default.createElement(
-              "li",
-              null,
-              "Grading of Quizes and Projects."
-            ),
-            _react2.default.createElement(
-              "li",
-              null,
-              "Answering of doubts any of the students had about their grade."
-            )
-          )
-        )
-      )
-    )
-  );
-}
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = Navbar;
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Navbar() {
-  return _react2.default.createElement(
-    "nav",
-    { className: "nav" },
-    _react2.default.createElement("img", { src: "./react-logo.png", className: "nav-logo" }),
-    _react2.default.createElement(
-      "ul",
-      { className: "nav-items" },
-      _react2.default.createElement(
-        "li",
-        null,
-        "Blog"
-      ),
-      _react2.default.createElement(
-        "li",
-        null,
-        "About"
-      ),
-      _react2.default.createElement(
-        "li",
-        null,
-        "Contact"
-      )
-    )
-  );
-}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ })
 /******/ ]);

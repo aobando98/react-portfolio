@@ -7,13 +7,13 @@ export default function Education() {
         <h2>Education</h2>
 
         <section>
-          <h3>Tecnológico de Costa Rica - Cartago, CR</h3>
-          <p>Bachelor in Computer Science Engeeniring, 2016-to date</p>
+          <h3>LEAD U - San Jose, CR</h3>
+          <p>Cloud Computing, 2023-to date</p>
         </section>
 
         <section>
-          <h3>ULACIT - San Jose, CR</h3>
-          <p>Accounting assistance technician, 2020-to date</p>
+          <h3>Tecnológico de Costa Rica - Cartago, CR</h3>
+          <p>Bachelor in Computer Science Engeeniring, 2016-21</p>
         </section>
 
         <section>
