@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -264,9 +264,9 @@ process.umask = function() { return 0; };
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(12);
+  module.exports = __webpack_require__(13);
 } else {
-  module.exports = __webpack_require__(11);
+  module.exports = __webpack_require__(12);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -376,9 +376,9 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(16);
+  module.exports = __webpack_require__(17);
 } else {
-  module.exports = __webpack_require__(15);
+  module.exports = __webpack_require__(16);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -408,7 +408,7 @@ function Footer() {
         _react2.default.createElement(
             "small",
             null,
-            "\xA9 2021 Ziroll development. All rights reserved."
+            "\xA9 2023 Obando development. All rights reserved."
         )
     );
 }
@@ -421,7 +421,7 @@ function Footer() {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.default = Header;
 
@@ -432,34 +432,29 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Header() {
-    return _react2.default.createElement(
-        "header",
+  return _react2.default.createElement(
+    "header",
+    null,
+    _react2.default.createElement(
+      "div",
+      { "class": "content-wrap" },
+      _react2.default.createElement(
+        "h1",
         null,
-        _react2.default.createElement(
-            "nav",
-            { className: "nav" },
-            _react2.default.createElement("img", { src: "./react-logo.png", className: "nav-logo" }),
-            _react2.default.createElement(
-                "ul",
-                { className: "nav-items" },
-                _react2.default.createElement(
-                    "li",
-                    null,
-                    "Blog"
-                ),
-                _react2.default.createElement(
-                    "li",
-                    null,
-                    "About"
-                ),
-                _react2.default.createElement(
-                    "li",
-                    null,
-                    "Contact"
-                )
-            )
-        )
-    );
+        "Alberto Obando Z\xFA\xF1iga"
+      ),
+      _react2.default.createElement(
+        "h2",
+        null,
+        "Computer Science Engineer"
+      ),
+      _react2.default.createElement(
+        "p",
+        null,
+        "As a developer, I am able to bring to life my clients desires and fulfil all their requirements."
+      )
+    )
+  );
 }
 
 /***/ }),
@@ -470,7 +465,7 @@ function Header() {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.default = MainContent;
 
@@ -481,33 +476,135 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function MainContent() {
-    return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(
-            "h1",
-            null,
-            "Reasons I'm excited to learn React"
-        ),
-        _react2.default.createElement(
-            "ol",
-            null,
-            _react2.default.createElement(
-                "li",
-                null,
-                "It's a popular library, so I'll be able to fit in with the cool kids!"
-            ),
-            _react2.default.createElement(
-                "li",
-                null,
-                "I'm more likely to get a job as a developer if I know React"
-            )
-        )
-    );
+  return _react2.default.createElement(
+    "div",
+    null,
+    "Hi"
+  );
 }
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Projects;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Projects() {
+  return _react2.default.createElement(
+    "section",
+    { "class": "projects" },
+    _react2.default.createElement(
+      "div",
+      { "class": "content-wrap divider" },
+      _react2.default.createElement(
+        "h2",
+        null,
+        "Featured Projects"
+      ),
+      _react2.default.createElement(
+        "p",
+        null,
+        "These are my projects in development below. More information can be found at ",
+        _react2.default.createElement(
+          "a",
+          { href: "https://albertoobando.com" },
+          "albertoobando.com"
+        ),
+        "."
+      ),
+      _react2.default.createElement(
+        "section",
+        { "class": "project-item" },
+        _react2.default.createElement("img", {
+          src: "images/TourisTICOCar.jpg",
+          alt: "TourisTICO car in Turrialba"
+        }),
+        _react2.default.createElement(
+          "h3",
+          null,
+          "TourisTICO"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "TourisTICO is a Blog tipe web page about discovering Costa Rica with my dog, my truck, and my friends."
+        ),
+        _react2.default.createElement(
+          "a",
+          {
+            "class": "btn",
+            href: "https://www.instagram.com/touristico1/",
+            target: "_blank"
+          },
+          "Follow me"
+        )
+      ),
+      _react2.default.createElement(
+        "section",
+        { "class": "project-item" },
+        _react2.default.createElement("img", { src: "images/506LabStore.jpg", alt: "506 Lab Store Logo" }),
+        _react2.default.createElement(
+          "h3",
+          null,
+          "506 Lab Store"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "506 Lab Store is a store that specializes in selling and repairing electronic devices. They have a wide range of products and services available. To see more please visit the site."
+        ),
+        _react2.default.createElement(
+          "a",
+          {
+            "class": "btn",
+            href: "https://www.facebook.com/506labstore-360275531273529/",
+            target: "_blank"
+          },
+          "Consult now!!"
+        )
+      ),
+      _react2.default.createElement(
+        "section",
+        { "class": "project-item" },
+        _react2.default.createElement("img", { src: "images/spookyGlitterLogo.jpg", alt: "Spooky Glitter Logo" }),
+        _react2.default.createElement(
+          "h3",
+          null,
+          "Spooky Glitter"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "Spooky Glitter is a store website where the users can see all the available a soon to come items. They are also able to buy directly from the website."
+        ),
+        _react2.default.createElement(
+          "a",
+          {
+            "class": "btn",
+            href: "https://www.instagram.com/spooky_glitter/",
+            target: "_blank"
+          },
+          "See our Instagram"
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -545,15 +642,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(10);
+  module.exports = __webpack_require__(11);
 } else {
-  module.exports = __webpack_require__(9);
+  module.exports = __webpack_require__(10);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -563,7 +660,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(7);
+var _reactDom = __webpack_require__(8);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -579,14 +676,38 @@ var _MainContent = __webpack_require__(6);
 
 var _MainContent2 = _interopRequireDefault(_MainContent);
 
+var _Projects = __webpack_require__(7);
+
+var _Projects2 = _interopRequireDefault(_Projects);
+
+var _Work = __webpack_require__(21);
+
+var _Work2 = _interopRequireDefault(_Work);
+
+var _Contact = __webpack_require__(19);
+
+var _Contact2 = _interopRequireDefault(_Contact);
+
+var _Education = __webpack_require__(20);
+
+var _Education2 = _interopRequireDefault(_Education);
+
+var _Navbar = __webpack_require__(22);
+
+var _Navbar2 = _interopRequireDefault(_Navbar);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
     return _react2.default.createElement(
         "div",
         null,
+        _react2.default.createElement(_Navbar2.default, null),
         _react2.default.createElement(_Header2.default, null),
         _react2.default.createElement(_MainContent2.default, null),
+        _react2.default.createElement(_Work2.default, null),
+        _react2.default.createElement(_Education2.default, null),
+        _react2.default.createElement(_Contact2.default, null),
         _react2.default.createElement(_Footer2.default, null)
     );
 }
@@ -594,7 +715,7 @@ function App() {
 _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById("root"));
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -616,7 +737,7 @@ if (process.env.NODE_ENV !== "production") {
 var React = __webpack_require__(1);
 var _assign = __webpack_require__(2);
 var Scheduler = __webpack_require__(3);
-var tracing = __webpack_require__(17);
+var tracing = __webpack_require__(18);
 
 var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 
@@ -26864,7 +26985,7 @@ exports.version = ReactVersion;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27168,7 +27289,7 @@ exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!rk(c))throw Er
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29509,7 +29630,7 @@ exports.version = ReactVersion;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29539,7 +29660,7 @@ exports.useLayoutEffect=function(a,b){return S().useLayoutEffect(a,b)};exports.u
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29894,7 +30015,7 @@ exports.unstable_wrap = unstable_wrap;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29910,7 +30031,7 @@ var b=0;exports.__interactionsRef=null;exports.__subscriberRef=null;exports.unst
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30564,7 +30685,7 @@ exports.unstable_wrapCallback = unstable_wrapCallback;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30591,19 +30712,339 @@ exports.unstable_wrapCallback=function(a){var b=P;return function(){var c=P;P=b;
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(14);
+  module.exports = __webpack_require__(15);
 } else {
-  module.exports = __webpack_require__(13);
+  module.exports = __webpack_require__(14);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Contact;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Contact() {
+  return _react2.default.createElement(
+    "div",
+    { "class": "content-wrap" },
+    _react2.default.createElement(
+      "h2",
+      null,
+      "Contact me:"
+    ),
+    _react2.default.createElement(
+      "ul",
+      { "class": "contact-list" },
+      _react2.default.createElement(
+        "li",
+        null,
+        _react2.default.createElement(
+          "a",
+          { href: "mailto:alberto.obando98@gmail.com" },
+          "alberto.obando98@gmail.com"
+        )
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        _react2.default.createElement(
+          "a",
+          { href: "https://albertoobando.com", target: "_blank" },
+          "albertoobando.com"
+        )
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        _react2.default.createElement(
+          "a",
+          {
+            href: "https://www.linkedin.com/in/alberto-obando-zuniga/",
+            target: "_blank"
+          },
+          "LinkedIn"
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Education;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Education() {
+  return _react2.default.createElement(
+    "section",
+    { "class": "education" },
+    _react2.default.createElement(
+      "div",
+      { "class": "content-wrap item-details" },
+      _react2.default.createElement(
+        "h2",
+        null,
+        "Education"
+      ),
+      _react2.default.createElement(
+        "section",
+        null,
+        _react2.default.createElement(
+          "h3",
+          null,
+          "Tecnol\xF3gico de Costa Rica - Cartago, CR"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "Bachelor in Computer Science Engeeniring, 2016-to date"
+        )
+      ),
+      _react2.default.createElement(
+        "section",
+        null,
+        _react2.default.createElement(
+          "h3",
+          null,
+          "ULACIT - San Jose, CR"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "Accounting assistance technician, 2020-to date"
+        )
+      ),
+      _react2.default.createElement(
+        "section",
+        null,
+        _react2.default.createElement(
+          "h3",
+          null,
+          "Saint Paul High School - Alajuela, CR"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "Bachelor in Secondary Education, 2011-2015"
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Work;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Work() {
+  return _react2.default.createElement(
+    "section",
+    { "class": "work-experience" },
+    _react2.default.createElement(
+      "div",
+      { "class": "content-wrap item-details divider" },
+      _react2.default.createElement(
+        "h2",
+        null,
+        "Work Experience"
+      ),
+      _react2.default.createElement(
+        "p",
+        null,
+        "See my complete work experience on:",
+        _react2.default.createElement(
+          "a",
+          { href: "https://www.linkedin.com/in/alberto-obando-zuniga/"
+          },
+          "LinkedIn"
+        ),
+        "."
+      ),
+      _react2.default.createElement(
+        "section",
+        { "class": "job-item" },
+        _react2.default.createElement(
+          "div",
+          { "class": "job-details" },
+          _react2.default.createElement(
+            "h3",
+            null,
+            "Project Management and QA"
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            "Tecnol\xF3gico de Costa Rica"
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            "February 2019-Present"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { "class": "job-summary" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "Managed diferent types of projects so QA was always maintained and the best result was achieved",
+            _react2.default.createElement(
+              "a",
+              { href: "https://albertoobando.com" },
+              "albertoobando.com"
+            ),
+            "."
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "section",
+        { "class": "job-item" },
+        _react2.default.createElement(
+          "div",
+          { "class": "job-details" },
+          _react2.default.createElement(
+            "h3",
+            null,
+            "Assistant for Algorithm Analysis and Sound Synthesis"
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            "Tecnol\xF3gico de Costa Rica"
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            "February 2018 - July 2018"
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { "class": "job-summary" },
+          _react2.default.createElement(
+            "p",
+            null,
+            "Assisted profesor Rodrigo Nu\xF1ez Nu\xF1ez while he was teaching classes."
+          ),
+          _react2.default.createElement(
+            "p",
+            null,
+            "Key contributions:"
+          ),
+          _react2.default.createElement(
+            "ul",
+            null,
+            _react2.default.createElement(
+              "li",
+              null,
+              "Grading of Quizes and Projects."
+            ),
+            _react2.default.createElement(
+              "li",
+              null,
+              "Answering of doubts any of the students had about their grade."
+            )
+          )
+        )
+      )
+    )
+  );
+}
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Navbar;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Navbar() {
+  return _react2.default.createElement(
+    "nav",
+    { className: "nav" },
+    _react2.default.createElement("img", { src: "./react-logo.png", className: "nav-logo" }),
+    _react2.default.createElement(
+      "ul",
+      { className: "nav-items" },
+      _react2.default.createElement(
+        "li",
+        null,
+        "Blog"
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        "About"
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        "Contact"
+      )
+    )
+  );
+}
 
 /***/ })
 /******/ ]);
